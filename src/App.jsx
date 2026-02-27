@@ -199,8 +199,6 @@ function App() {
                   <p className="stat-number">15 anos</p>
                   <p className="stat-label">de experiência</p>
                 </div>
-              </div>
-              <div className="stats-row">
                 <div className="stat-box">
                   <p className="stat-number">98%</p>
                   <p className="stat-label">de satisfação</p>
