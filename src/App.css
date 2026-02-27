@@ -1653,13 +1653,13 @@
 }
 
 /* ===========================
-   RESPONSIVE
+   RESPONSIVE - TABLET (1024px)
    =========================== */
 @media (max-width: 1024px) {
   .hero-title {
     font-size: 42px;
     line-height: 1.1;
-    width: 80%;
+    width: 85%;
   }
 
   .hero-subtitle {
@@ -1668,13 +1668,24 @@
   }
 
   .classes-title {
-    font-size: 42px;
+    font-size: 38px;
   }
 
   .gamification-inner,
   .lives-inner,
   .bio-inner {
     flex-direction: column;
+    text-align: center;
+  }
+
+  .gamification-text,
+  .lives-text,
+  .bio-text {
+    text-align: center;
+  }
+
+  .lives-text .btn {
+    margin: 0 auto;
   }
 
   .pricing-card-full {
@@ -1689,93 +1700,399 @@
   .fluency-grid {
     flex-direction: column;
   }
+
+  .fluency-text {
+    text-align: center;
+  }
 }
 
+/* ===========================
+   RESPONSIVE - MOBILE (768px)
+   =========================== */
 @media (max-width: 768px) {
+  /* --- Navbar mobile --- */
+  .navbar {
+    padding: 3px 0;
+  }
+
   .navbar-inner {
-    padding: 0 15px;
+    padding: 0 12px;
+    min-height: 56px;
+  }
+
+  .logo-img {
+    height: 42px;
+  }
+
+  .navbar-actions {
+    gap: 8px;
+    padding: 8px 0;
   }
 
   .nav-link-student {
-    font-size: 14px;
+    font-size: 12px;
+    margin-right: 2px;
   }
 
   .btn-primary {
-    font-size: 16px;
-    padding: 12px 25px;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 9px;
   }
 
+  .btn-large {
+    font-size: 18px;
+    height: 50px;
+    padding: 12px 30px;
+  }
+
+  /* --- Hero mobile --- */
   .hero-section {
-    margin-top: 70px;
-    padding-bottom: 60px;
+    margin-top: 56px;
+    padding-bottom: 50px;
+  }
+
+  .hero-reviews {
+    margin-top: 30px;
+  }
+
+  .review-avatar {
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+    margin-left: -8px;
+  }
+
+  .review-stars .star {
+    font-size: 18px;
+  }
+
+  .review-score {
+    font-size: 16px;
+  }
+
+  .review-count {
+    font-size: 13px;
   }
 
   .hero-title {
-    font-size: 32px;
-    line-height: 1.1;
-    width: 95%;
+    font-size: 30px;
+    line-height: 1.15;
+    width: 100%;
+    padding: 0 10px;
   }
 
   .hero-subtitle {
-    font-size: 16px;
+    font-size: 15px;
     width: 100%;
+    padding: 0 15px;
   }
 
-  .classes-title {
-    font-size: 28px;
+  .hero-video {
+    margin: 15px 0;
   }
 
-  .btn-pill {
-    font-size: 13px;
-    max-width: 160px;
-    height: 38px;
+  .video-play-btn {
+    width: 60px;
+    height: 60px;
   }
 
-  .classes-buttons-row {
-    gap: 8px;
-  }
-
-  .app-title {
-    font-size: 28px;
-  }
-
-  .method-title,
-  .special-title,
-  .bio-text h2,
-  .testimonials-title,
-  .gamification-text h2,
-  .lives-text h2 {
-    font-size: 26px;
-  }
-
-  .journey-title {
-    font-size: 28px;
-  }
-
-  .lema-text {
+  .video-play-btn i {
     font-size: 22px;
   }
 
-  .balloon-title {
-    font-size: 24px;
-    width: 95%;
+  /* --- Sections paddings mobile --- */
+  .fluency-section,
+  .lema-section,
+  .app-section,
+  .method-section,
+  .journey-section,
+  .gamification-section,
+  .lives-section,
+  .special-section,
+  .cta-section,
+  .pricing-section,
+  .guarantee-section,
+  .bio-section,
+  .testimonials-section,
+  .faq-section {
+    padding: 50px 0;
   }
 
+  .balloon-section {
+    padding: 0 0 50px;
+  }
+
+  .section-control {
+    padding: 0 16px;
+  }
+
+  /* --- Fluency / Partnership mobile --- */
   .fluency-title {
-    font-size: 24px;
-    width: 95%;
+    font-size: 22px;
+    width: 100%;
   }
 
+  .fluency-text {
+    text-align: center;
+  }
+
+  .fluency-text p {
+    font-size: 15px;
+  }
+
+  /* --- Balloon / Mission mobile --- */
+  .balloon-title {
+    font-size: 22px;
+    width: 100%;
+  }
+
+  /* --- Lema / Stats mobile --- */
+  .lema-quote-box {
+    padding: 35px 25px;
+    border-radius: 20px;
+  }
+
+  .lema-quote-box::before {
+    font-size: 80px;
+    left: 15px;
+  }
+
+  .lema-label {
+    font-size: 13px;
+  }
+
+  .lema-text {
+    font-size: 20px;
+  }
+
+  .lema-desc {
+    font-size: 15px;
+    padding: 0 5px;
+  }
+
+  .stats-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .stat-box {
+    width: 100%;
+    max-width: 100%;
+    padding: 25px 30px;
+    text-align: center;
+  }
+
+  .stat-number {
+    font-size: 34px;
+  }
+
+  /* --- Services / Classes mobile --- */
+  .classes-section {
+    padding: 40px 0 50px;
+  }
+
+  .classes-header {
+    margin-top: 30px;
+  }
+
+  .classes-title {
+    font-size: 24px;
+    padding: 0 10px;
+  }
+
+  .classes-buttons-row {
+    gap: 6px;
+    padding: 0 10px;
+  }
+
+  .btn-pill {
+    font-size: 11px;
+    max-width: 48%;
+    height: 36px;
+    padding: 8px;
+  }
+
+  .more-text {
+    font-size: 16px;
+  }
+
+  /* --- App / Platform mobile --- */
+  .app-title {
+    font-size: 24px;
+    padding: 0 10px;
+  }
+
+  .app-title br {
+    display: none;
+  }
+
+  .app-features-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .app-feature {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* --- Method mobile --- */
+  .method-title {
+    font-size: 24px;
+  }
+
+  .method-desc {
+    font-size: 15px;
+    padding: 0 5px;
+  }
+
+  /* --- Carousel mobile --- */
+  .carousel-wrapper {
+    padding: 0 35px;
+  }
+
+  .slider-arrow {
+    width: 34px;
+    height: 34px;
+    font-size: 20px;
+  }
+
+  /* --- Journey mobile --- */
+  .journey-title {
+    font-size: 26px;
+  }
+
+  .journey-step {
+    gap: 18px;
+  }
+
+  .journey-num-circle {
+    width: 48px;
+    height: 48px;
+    font-size: 18px;
+  }
+
+  .journey-step-title {
+    font-size: 20px;
+  }
+
+  .journey-step-text {
+    font-size: 15px;
+  }
+
+  /* --- Gamification / Lives / Bio mobile --- */
+  .gamification-text h2,
+  .lives-text h2,
+  .bio-text h2 {
+    font-size: 24px;
+  }
+
+  .gamification-text p,
+  .lives-text p,
+  .bio-text p {
+    font-size: 15px;
+  }
+
+  .gamification-text,
+  .lives-text,
+  .bio-text {
+    text-align: center;
+    padding: 10px 5px;
+  }
+
+  /* --- Special Programs mobile --- */
+  .special-title {
+    font-size: 24px;
+  }
+
+  .special-sub {
+    font-size: 15px;
+    padding: 0 10px;
+  }
+
+  .slider-container {
+    padding: 15px 0 50px;
+  }
+
+  /* --- CTA mobile --- */
   .cta-title {
-    font-size: 28px;
+    font-size: 24px;
+    padding: 0 10px;
+  }
+
+  /* --- Pricing mobile --- */
+  .pricing-card-full {
+    padding: 35px 22px;
+    border-radius: 22px;
+  }
+
+  .pricing-cat {
+    font-size: 16px;
+  }
+
+  .check-item p {
+    font-size: 14px;
+  }
+
+  .pricing-intro {
+    font-size: 15px;
   }
 
   .pricing-price {
     font-size: 48px;
   }
 
+  .btn-checkout {
+    font-size: 18px;
+    padding: 16px;
+  }
+
+  /* --- Guarantee mobile --- */
+  .guarantee-title {
+    font-size: 22px;
+  }
+
+  .guarantee-text {
+    font-size: 15px;
+    padding: 0 5px;
+  }
+
+  /* --- Testimonials mobile --- */
+  .testimonials-title {
+    font-size: 24px;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  /* --- FAQ mobile --- */
   .faq-title {
-    font-size: 28px;
+    font-size: 26px;
+  }
+
+  .faq-item summary {
+    padding: 15px 18px;
+    font-size: 14px;
+  }
+
+  .faq-item p {
+    padding: 0 18px 15px;
+    font-size: 14px;
+  }
+
+  .btn-whatsapp {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+
+  /* --- Footer mobile --- */
+  .footer {
+    padding: 40px 0 30px;
   }
 
   .footer-row {
@@ -1789,63 +2106,136 @@
     gap: 10px;
   }
 
-  .app-features-row {
-    flex-direction: column;
-    align-items: center;
+  .logo-footer {
+    height: 38px;
   }
 
-  .app-feature {
-    width: 100%;
-    max-width: 300px;
+  /* --- WhatsApp float mobile --- */
+  .wpp-float {
+    width: 54px;
+    height: 54px;
+    font-size: 26px;
+    bottom: 20px;
+    right: 20px;
   }
 
-  .stats-row {
-    flex-direction: column;
-    align-items: center;
+  /* --- Modal mobile --- */
+  .modal-box {
+    padding: 30px 25px;
+    border-radius: 16px;
+    width: 92%;
   }
 
-  .stat-box {
-    width: 100%;
-    max-width: 300px;
+  .modal-box h1 {
+    font-size: 18px;
   }
 
-  .guarantee-title {
-    font-size: 22px;
+  .modal-box input {
+    font-size: 15px;
+    padding: 12px 15px;
+  }
+
+  .btn-submit {
+    font-size: 16px;
+    padding: 14px;
   }
 }
 
+/* ===========================
+   RESPONSIVE - SMALL MOBILE (480px)
+   =========================== */
 @media (max-width: 480px) {
   .hero-title {
     font-size: 26px;
     width: 100%;
   }
 
+  .hero-subtitle {
+    font-size: 14px;
+  }
+
   .classes-title {
-    font-size: 22px;
+    font-size: 20px;
+  }
+
+  .classes-buttons {
+    margin: 15px 0 20px;
   }
 
   .classes-buttons-row {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .btn-pill {
-    max-width: 280px;
+    font-size: 10px;
+    max-width: 46%;
+    height: 34px;
   }
 
-  .pricing-card-full {
-    padding: 30px 20px;
+  .app-title {
+    font-size: 20px;
   }
 
-  .pricing-price {
-    font-size: 40px;
-  }
-
-  .btn-checkout {
+  .lema-text {
     font-size: 18px;
   }
 
-  .carousel-wrapper {
-    padding: 0 30px;
+  .stat-number {
+    font-size: 30px;
+  }
+
+  .pricing-card-full {
+    padding: 28px 18px;
+  }
+
+  .pricing-price {
+    font-size: 42px;
+  }
+
+  .btn-checkout {
+    font-size: 16px;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .journey-title {
+    font-size: 22px;
+  }
+
+  .gamification-text h2,
+  .lives-text h2,
+  .bio-text h2 {
+    font-size: 22px;
+  }
+
+  .method-title,
+  .special-title,
+  .cta-title {
+    font-size: 20px;
+  }
+
+  .faq-title {
+    font-size: 22px;
+  }
+
+  .balloon-title {
+    font-size: 20px;
+  }
+
+  .fluency-title {
+    font-size: 20px;
+  }
+
+  .guarantee-title {
+    font-size: 20px;
+  }
+
+  .testimonials-title {
+    font-size: 22px;
   }
 }
